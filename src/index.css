@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800;950&family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cinzel", ui-serif, Cambria, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom keyframes for premium cash settlement marquee scrolling ticker */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  gap: 2rem;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes pulseSlow {
+  0%, 100% { opacity: 0.82; transform: scale(1); }
+  50% { opacity: 0.98; transform: scale(1.015); }
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 5s ease-in-out infinite;
+}
+
+.glow-gold {
+  box-shadow: 0 0 15px rgba(251, 191, 36, 0.35);
+}
+
+/* High quality scrollbars matching dark luxury velvet color theme */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+::-webkit-scrollbar-thumb {
+  background: #dc2626;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}

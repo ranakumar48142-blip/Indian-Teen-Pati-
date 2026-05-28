@@ -1,0 +1,6 @@
+{
+  "name": "Teen Patti Cash Gaming App",
+  "description": "Premium real-cash Teen Patti gaming dashboard featuring a dark royal luxury interface, gold accents, active gaming tables, wallet cashout system, VIP status tracker, and smooth chip animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
